@@ -9,25 +9,12 @@ header {
   background-color: #333;
   color: #fff;
   padding: 1em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
-header img {
-  height: 40px;
-  margin-right: 1rem;
-}
-
-nav {
-  width: 16em;
-}
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 nav a {
