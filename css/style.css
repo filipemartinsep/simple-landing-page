@@ -455,6 +455,14 @@ button:hover {
   border: none;
   color: #fff;
 }
+
+#message {
+  background-color: #d35757;
+  color: #fff;
+  text-align: center;
+  font-size: large;
+  font-weight: 600;
+}
 /* end seventh section */
 
 /* footer */
