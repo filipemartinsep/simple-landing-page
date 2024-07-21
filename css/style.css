@@ -282,7 +282,7 @@ nav ul li a:hover {
   margin: 12.5px 12.5px;
   padding: 40px 20px;
   margin-top: 50px;
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 20px 0px #0003;
 }
 
 .first-row-products img,
@@ -433,7 +433,6 @@ textarea {
 }
 
 button {
-  width: 50pxpx;
   border: none;
   border-radius: 10px;
   text-align: center;
@@ -456,13 +455,51 @@ button:hover {
   color: #fff;
 }
 
-#message {
-  background-color: #d35757;
-  color: #fff;
+/* snackbar */
+#snackbar {
+  visibility: hidden;
+  position: relative;
+  left: 50%;
+  z-index: 1;
+  bottom: -10px;
+  transform: translateX(-50%);
+  background-color: #29ad65;
+  box-shadow: 5px 5px 20px 0px #0003;
   text-align: center;
-  font-size: large;
-  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
 }
+
+#snackbar.show {
+  visibility: visible;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0;
+  }
+
+  to {
+    bottom: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 10px;
+    opacity: 1;
+  }
+
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+/* snackbar */
+
 /* end seventh section */
 
 /* footer */
